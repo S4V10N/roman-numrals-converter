@@ -39,16 +39,17 @@ convertBtn.onclick = (e) => {
             "Please enter a number less than or equal to 3999";
         return;
     }
+    if (!numberInput.value) {
+        romanNumResult.classList.remove("hidden");
+        romanNumResult.innerHTML = "Please enter a valid number";
+        return;
+    }
     if (numberInput.value <= 0) {
         romanNumResult.classList.remove("hidden");
         romanNumResult.innerHTML =
             "Please enter a number greater than or equal to 1";
         return;
     }
-    if (numberInput.value.length === 0) {
-        romanNumResult.classList.remove("hidden");
-        romanNumResult.innerHTML = "Please enter a valid number";
-        return;
-    }
+
     convertToRoman(numberInput.value);
 };

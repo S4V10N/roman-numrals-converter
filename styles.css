@@ -77,14 +77,14 @@ main form {
         border: none;
         font-size: 2rem;
         margin-bottom: 2rem;
-        background-color: darkkhaki;
+        background-color: hsl(56, 38%, 58%);
         font-weight: bold;
         cursor: pointer;
         text-transform: capitalize;
         transition: 1s ease-in-out;
         &:hover,
         &:active {
-            background-color: khaki;
+            background-color: hsl(56, 38%, 64%);
         }
     }
     div {
